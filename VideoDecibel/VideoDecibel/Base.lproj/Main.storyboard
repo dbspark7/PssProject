@@ -1,24 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoDecibel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yc7-VL-0YN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yc7-VL-0YN" secondAttribute="height" multiplier="16:9" id="iec-jC-pTA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBH-3J-THj" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="211" width="375" height="375"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LBH-3J-THj" secondAttribute="height" multiplier="1:1" id="55u-2u-PHn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LBH-3J-THj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2XV-dG-gcY"/>
+                            <constraint firstItem="LBH-3J-THj" firstAttribute="top" secondItem="yc7-VL-0YN" secondAttribute="bottom" id="BrS-lP-nWK"/>
+                            <constraint firstItem="yc7-VL-0YN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TSS-zF-0R6"/>
+                            <constraint firstItem="LBH-3J-THj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hH2-Ef-90f"/>
+                            <constraint firstItem="yc7-VL-0YN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o0J-i0-sL0"/>
+                            <constraint firstItem="yc7-VL-0YN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uVC-qE-Tkh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chartView" destination="LBH-3J-THj" id="clh-YN-hcq"/>
+                        <outlet property="videoView" destination="yc7-VL-0YN" id="8qz-Cb-diJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="-27.436281859070466"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
