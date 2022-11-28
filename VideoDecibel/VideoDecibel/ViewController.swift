@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import Photos
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
     
@@ -21,10 +22,17 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
     var takePicture = false
     var isBackCamera = true
+    
+    var recorder: AVAudioRecorder!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        try! AVAudioSession.sharedInstance().setCategory(.multiRoute)
+//        try! AVAudioSession.sharedInstance().setMode(.voiceChat)
+        try! AVAudioSession.sharedInstance().setMode(.measurement)
+        try! AVAudioSession.sharedInstance().setActive(true)
         
         captureSession = AVCaptureSession()
         captureSession.beginConfiguration()
@@ -62,17 +70,18 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
                 
                 captureSession.addInput(backCameraInput)
         
-        let audioDevice = AVCaptureDevice.default(for: AVMediaType.audio)!
-            let audioInput = try? AVCaptureDeviceInput(device: audioDevice)
-            if captureSession.canAddInput(audioInput!) {
-              captureSession.addInput(audioInput!)
-            }
+//        let audioDevice = AVCaptureDevice.default(for: AVMediaType.audio)!
+//            let audioInput = try? AVCaptureDeviceInput(device: audioDevice)
+//            if captureSession.canAddInput(audioInput!) {
+//              captureSession.addInput(audioInput!)
+//            }
         
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer.videoGravity = .resizeAspectFill
         previewLayer.connection?.videoOrientation = .portrait
         self.previewLayer.frame = self.view.frame
         view.layer.insertSublayer(previewLayer, at: 0)
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -85,17 +94,17 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         videoOutput.setSampleBufferDelegate(self, queue: cameraSampleBufferQueue)
         audioOutput.setSampleBufferDelegate(self, queue: queue)
                 
-//        if captureSession.canAddOutput(videoOutput) {
-//            captureSession.addOutput(videoOutput)
-//        } else {
-//            fatalError("아웃풋 설정이 불가합니다.")
-//        }
-        
-        if captureSession.canAddOutput(audioOutput) {
-            captureSession.addOutput(audioOutput)
+        if captureSession.canAddOutput(videoOutput) {
+            captureSession.addOutput(videoOutput)
         } else {
             fatalError("아웃풋 설정이 불가합니다.")
         }
+        
+//        if captureSession.canAddOutput(audioOutput) {
+//            captureSession.addOutput(audioOutput)
+//        } else {
+//            fatalError("아웃풋 설정이 불가합니다.")
+//        }
         videoOutput.connections.first?.videoOrientation = .portrait
 
         captureSession.commitConfiguration()
@@ -104,22 +113,93 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             self.captureSession.startRunning()
         }
         
+        
+//        let recordersettings = [
+//                AVFormatIDKey: Int(kAudioFormatAppleIMA4),
+//                AVSampleRateKey: 44100,
+//                AVNumberOfChannelsKey: 1,
+//                AVLinearPCMBitDepthKey: 16,
+//                AVLinearPCMIsFloatKey: false,
+//                AVLinearPCMIsBigEndianKey: false,
+//                //AVEncoderAudioQualityKey: AVAudioQuality.High.rawValue
+//        ] as [String : Any]
+        
+//        let recordSettings = [AVSampleRateKey : 44100,
+//                AVFormatIDKey : Int(kAudioFormatMPEG4AAC),
+//                AVNumberOfChannelsKey : 1,
+//                AVEncoderAudioQualityKey : AVAudioQuality.high.rawValue]
+        
+        let settings:[String : Any] = [ AVFormatIDKey : kAudioFormatAppleLossless,
+            AVEncoderAudioQualityKey : AVAudioQuality.max.rawValue,
+            AVEncoderBitRateKey: 320000,
+            AVNumberOfChannelsKey : 2,
+            AVSampleRateKey : 44100.0 ] as [String : Any]
+        
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
+        let recordOutputUrl = URL(fileURLWithPath: documentsPath.appendingPathComponent("videoFile")).appendingPathExtension("mp4")
+        
+        
+//        AVAudioSession.sharedInstance().requestRecordPermission({ [weak self] asdf in
+//
+//        })
+
+        PHPhotoLibrary.requestAuthorization { [weak self] status in
+            if status == .authorized {
+                do
+                {
+                    self?.recorder = try AVAudioRecorder(url: recordOutputUrl, settings: settings)
+                    self?.recorder.isMeteringEnabled = true
+                    if self?.recorder.prepareToRecord() ?? false {
+                        self?.recorder.record()
+                    }
+                    
+                }
+                catch let error
+                {
+                    print("error: \(error)")
+                }
+            } else {
+                
+            }
+        }
+        
+        
     }
     
+    private func normalizeSoundLevel(level: Float) -> Float {
+            // 화면에 표시되는 rawSoundLevel 기준
+            // white noise만 존재할 때의 값을 lowLevel 에 할당
+            // 가장 큰 소리를 냈을 때 값을 highLevel 에 할당
+            
+            let lowLevel: Float = -50
+            let highLevel: Float = -10
+            
+            var level = max(0.0, level - lowLevel) // low level이 0이 되도록 shift
+            level = min(level, highLevel - lowLevel) // high level 도 shift
+            // 이제 level은 0.0 ~ 40까지의 값으로 설정 됨.
+            return level / (highLevel - lowLevel) // scaled to 0.0 ~ 1
+        }
+    
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        print("여기 \(output.connection(with: .video)) \(output.connection(with: .audio)))")
+//        print("여기 \(output.connection(with: .video)) \(output.connection(with: .audio)))")
+        if recorder != nil {
+            recorder.updateMeters()
+            let level = recorder.peakPower(forChannel: 0)
+            print("여기 \(recorder.isRecording) \(recorder.averagePower(forChannel: 0)), \(recorder.peakPower(forChannel: 0))")
+//            print("\(normalizeSoundLevel(level: level)) dB")
+        }
         
-            if !takePicture {
-                return
-            }
-        
-            guard let cvBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
-                return
-            }
-            let ciImage = CIImage(cvImageBuffer: cvBuffer)
-            let uiImage = UIImage(ciImage: ciImage)
-            self.takePicture = false
-            self.captureSession.stopRunning()
+//            if !takePicture {
+//                return
+//            }
+//
+//            guard let cvBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+//                return
+//            }
+//            let ciImage = CIImage(cvImageBuffer: cvBuffer)
+//            let uiImage = UIImage(ciImage: ciImage)
+//            self.takePicture = false
+//            self.captureSession.stopRunning()
 //            DispatchQueue.main.async {
 //                guard let pictureViewController = self.storyboard?.instantiateViewController(identifier: "PictureViewController") as? PictureViewController else { return }
 //                pictureViewController.picture = uiImage
