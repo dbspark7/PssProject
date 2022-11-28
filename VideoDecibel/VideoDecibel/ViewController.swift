@@ -30,7 +30,19 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     var recorder: AVAudioRecorder!
     
     var shouldHideData: Bool = false
-
+    
+//    var values = [ChartDataEntry]()
+    
+    var count = 1000
+    
+    lazy var values: [ChartDataEntry] = {
+        var ret = [ChartDataEntry]()
+        for i in 0..<1000 {
+            ret.append(ChartDataEntry(x: Double(i), y: 0))
+        }
+        return ret
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -143,8 +155,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
 //        chartView.animate(xAxisDuration: 2.5)
     }
-    
-    var values = [ChartDataEntry]()
     
     func setData() {
         let set1 = LineChartDataSet(entries: values, label: "DataSet 1")
@@ -323,7 +333,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             return level / (highLevel - lowLevel) // scaled to 0.0 ~ 1
         }
     
-    var count = 0
+    
     
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
 //        print("여기 \(output.connection(with: .video)) \(output.connection(with: .audio)))")
@@ -332,9 +342,11 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             let level = recorder.peakPower(forChannel: 0)
 //            print("여기 \(recorder.isRecording) \(recorder.averagePower(forChannel: 0)), \(recorder.peakPower(forChannel: 0))")
 //            setDataCount(count, range: UInt32(recorder.peakPower(forChannel: 0)))
+            count += 1
+            values.removeFirst()
             values.append(ChartDataEntry(x: Double(count), y: Double(level), icon: nil))
             
-            count += 1
+            
             
             DispatchQueue.main.async {
                 self.setData()
