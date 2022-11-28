@@ -8,6 +8,9 @@
       location = "group:RawMaterialPrice/RawMaterialPrice.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:VideoDecibel/VideoDecibel.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:PssCore/PssCore.xcodeproj">
    </FileRef>
 </Workspace>
