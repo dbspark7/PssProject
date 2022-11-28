@@ -9,6 +9,7 @@ import UIKit
 import AVFoundation
 import Photos
 import Charts
+import ReplayKit
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
     
@@ -394,6 +395,34 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 //
 //            switchCameraButton.isUserInteractionEnabled = true
 //    }
+    
+    @IBAction func onClickButton(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        if sender.isSelected {
+            RPScreenRecorder.shared().isMicrophoneEnabled = true
+            RPScreenRecorder.shared().startRecording() { error in
+                print(error)
+            }
+        } else {
+            let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
+            let recordOutputUrl = URL(fileURLWithPath: documentsPath.appendingPathComponent("asdf1")).appendingPathExtension("mp4")
+            
+            if FileManager.default.fileExists(atPath: recordOutputUrl.path) {
+                try? FileManager.default.removeItem(at: recordOutputUrl)
+            }
+            
+            RPScreenRecorder.shared().stopRecording(withOutput: recordOutputUrl) { error in
+                PHPhotoLibrary.shared().performChanges {
+                    PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: recordOutputUrl)
+                } completionHandler: { success, error in
+                    print("success")
+                }
+            }
+            
+            
+        }
+        
+    }
 }
 
 extension ViewController: ChartViewDelegate {

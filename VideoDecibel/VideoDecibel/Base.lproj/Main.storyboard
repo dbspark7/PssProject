@@ -25,21 +25,31 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBH-3J-THj" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="0.0" y="211" width="375" height="375"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LBH-3J-THj" secondAttribute="height" multiplier="1:1" id="55u-2u-PHn"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="900-gk-Wyx">
+                                <rect key="frame" x="150" y="594" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="onClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FL2-4q-62s"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="LBH-3J-THj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2XV-dG-gcY"/>
                             <constraint firstItem="LBH-3J-THj" firstAttribute="top" secondItem="yc7-VL-0YN" secondAttribute="bottom" id="BrS-lP-nWK"/>
+                            <constraint firstItem="900-gk-Wyx" firstAttribute="top" secondItem="LBH-3J-THj" secondAttribute="bottom" constant="8" symbolic="YES" id="Ll0-tp-JgV"/>
                             <constraint firstItem="yc7-VL-0YN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TSS-zF-0R6"/>
                             <constraint firstItem="LBH-3J-THj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hH2-Ef-90f"/>
                             <constraint firstItem="yc7-VL-0YN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o0J-i0-sL0"/>
                             <constraint firstItem="yc7-VL-0YN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uVC-qE-Tkh"/>
+                            <constraint firstItem="900-gk-Wyx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xtB-bb-Ih9"/>
                         </constraints>
                     </view>
                     <connections>
