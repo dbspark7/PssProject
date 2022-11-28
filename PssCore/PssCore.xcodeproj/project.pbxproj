@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A325A12D6A3190A211D590EE /* Pods_PssCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E266751EAF926CAF2FCAC4 /* Pods_PssCore.framework */; };
 		AC50780928D5785A00168E4D /* PssCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = AC50780828D5785A00168E4D /* PssCore.docc */; };
 		AC50780F28D5785B00168E4D /* PssCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC50780428D5785A00168E4D /* PssCore.framework */; };
 		AC50781428D5785B00168E4D /* PssCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50781328D5785B00168E4D /* PssCoreTests.swift */; };
@@ -24,6 +25,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29639AD480BF9575E438095A /* Pods-PssCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PssCore.debug.xcconfig"; path = "Target Support Files/Pods-PssCore/Pods-PssCore.debug.xcconfig"; sourceTree = "<group>"; };
+		55E266751EAF926CAF2FCAC4 /* Pods_PssCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PssCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B0A636133B5AB9919FDF61C /* Pods-PssCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PssCore.release.xcconfig"; path = "Target Support Files/Pods-PssCore/Pods-PssCore.release.xcconfig"; sourceTree = "<group>"; };
 		AC50780428D5785A00168E4D /* PssCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PssCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC50780728D5785A00168E4D /* PssCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PssCore.h; sourceTree = "<group>"; };
 		AC50780828D5785A00168E4D /* PssCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PssCore.docc; sourceTree = "<group>"; };
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A325A12D6A3190A211D590EE /* Pods_PssCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +55,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D7E1F91EBC85EE2332A2C5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55E266751EAF926CAF2FCAC4 /* Pods_PssCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB238FED95B7ADC928126C3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29639AD480BF9575E438095A /* Pods-PssCore.debug.xcconfig */,
+				5B0A636133B5AB9919FDF61C /* Pods-PssCore.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		AC5077FA28D5785A00168E4D = {
 			isa = PBXGroup;
 			children = (
 				AC50780628D5785A00168E4D /* PssCore */,
 				AC50781228D5785B00168E4D /* PssCoreTests */,
 				AC50780528D5785A00168E4D /* Products */,
+				AB238FED95B7ADC928126C3F /* Pods */,
+				7D7E1F91EBC85EE2332A2C5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +128,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC50781828D5785B00168E4D /* Build configuration list for PBXNativeTarget "PssCore" */;
 			buildPhases = (
+				EC9BD721D32400814B63EA6D /* [CP] Check Pods Manifest.lock */,
 				AC5077FF28D5785A00168E4D /* Headers */,
 				AC50780028D5785A00168E4D /* Sources */,
 				AC50780128D5785A00168E4D /* Frameworks */,
@@ -154,7 +180,7 @@
 				};
 			};
 			buildConfigurationList = AC5077FE28D5785A00168E4D /* Build configuration list for PBXProject "PssCore" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -188,6 +214,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EC9BD721D32400814B63EA6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PssCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC50780028D5785A00168E4D /* Sources */ = {
@@ -339,6 +390,7 @@
 		};
 		AC50781928D5785B00168E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29639AD480BF9575E438095A /* Pods-PssCore.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -370,6 +422,7 @@
 		};
 		AC50781A28D5785B00168E4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B0A636133B5AB9919FDF61C /* Pods-PssCore.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

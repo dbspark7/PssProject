@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25AB33E1860B176E8A0A3C55 /* Pods_RawMaterialPriceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F020AB5472BE7D496505D3E /* Pods_RawMaterialPriceTests.framework */; };
+		6621EE7177514888C1AF9681 /* Pods_RawMaterialPriceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 976475E9BC74EEEF815E2373 /* Pods_RawMaterialPriceUITests.framework */; };
 		AC50786A28D578AF00168E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50786928D578AF00168E4D /* AppDelegate.swift */; };
 		AC50786C28D578AF00168E4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50786B28D578AF00168E4D /* SceneDelegate.swift */; };
 		AC50786E28D578AF00168E4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50786D28D578AF00168E4D /* ViewController.swift */; };
@@ -16,6 +18,7 @@
 		AC50788128D578B000168E4D /* RawMaterialPriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50788028D578B000168E4D /* RawMaterialPriceTests.swift */; };
 		AC50788B28D578B000168E4D /* RawMaterialPriceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50788A28D578B000168E4D /* RawMaterialPriceUITests.swift */; };
 		AC50788D28D578B000168E4D /* RawMaterialPriceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50788C28D578B000168E4D /* RawMaterialPriceUITestsLaunchTests.swift */; };
+		D4DD1A2E93FA39A392FF3101 /* Pods_RawMaterialPrice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F16A63219E4EF9BA94792CF /* Pods_RawMaterialPrice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12BFC32041441DBA6B9BAD20 /* Pods-RawMaterialPriceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RawMaterialPriceUITests.debug.xcconfig"; path = "Target Support Files/Pods-RawMaterialPriceUITests/Pods-RawMaterialPriceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		24A430E40FF9F18E74A6D887 /* Pods-RawMaterialPrice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RawMaterialPrice.debug.xcconfig"; path = "Target Support Files/Pods-RawMaterialPrice/Pods-RawMaterialPrice.debug.xcconfig"; sourceTree = "<group>"; };
+		762A358B343C38ACB2017843 /* Pods-RawMaterialPriceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RawMaterialPriceUITests.release.xcconfig"; path = "Target Support Files/Pods-RawMaterialPriceUITests/Pods-RawMaterialPriceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		976475E9BC74EEEF815E2373 /* Pods_RawMaterialPriceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RawMaterialPriceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F020AB5472BE7D496505D3E /* Pods_RawMaterialPriceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RawMaterialPriceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F16A63219E4EF9BA94792CF /* Pods_RawMaterialPrice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RawMaterialPrice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC50786628D578AF00168E4D /* RawMaterialPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RawMaterialPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC50786928D578AF00168E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC50786B28D578AF00168E4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,9 @@
 		AC50788628D578B000168E4D /* RawMaterialPriceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RawMaterialPriceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC50788A28D578B000168E4D /* RawMaterialPriceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawMaterialPriceUITests.swift; sourceTree = "<group>"; };
 		AC50788C28D578B000168E4D /* RawMaterialPriceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawMaterialPriceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BDE6B8EEAFE05924FB49CF08 /* Pods-RawMaterialPrice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RawMaterialPrice.release.xcconfig"; path = "Target Support Files/Pods-RawMaterialPrice/Pods-RawMaterialPrice.release.xcconfig"; sourceTree = "<group>"; };
+		EB9807AC6BD9B8C8F484F81C /* Pods-RawMaterialPriceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RawMaterialPriceTests.debug.xcconfig"; path = "Target Support Files/Pods-RawMaterialPriceTests/Pods-RawMaterialPriceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1799D03F6ED605D2DE6CB9D /* Pods-RawMaterialPriceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RawMaterialPriceTests.release.xcconfig"; path = "Target Support Files/Pods-RawMaterialPriceTests/Pods-RawMaterialPriceTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4DD1A2E93FA39A392FF3101 /* Pods_RawMaterialPrice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25AB33E1860B176E8A0A3C55 /* Pods_RawMaterialPriceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6621EE7177514888C1AF9681 /* Pods_RawMaterialPriceUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		806C6D1BD2807CC997E16DD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24A430E40FF9F18E74A6D887 /* Pods-RawMaterialPrice.debug.xcconfig */,
+				BDE6B8EEAFE05924FB49CF08 /* Pods-RawMaterialPrice.release.xcconfig */,
+				EB9807AC6BD9B8C8F484F81C /* Pods-RawMaterialPriceTests.debug.xcconfig */,
+				F1799D03F6ED605D2DE6CB9D /* Pods-RawMaterialPriceTests.release.xcconfig */,
+				12BFC32041441DBA6B9BAD20 /* Pods-RawMaterialPriceUITests.debug.xcconfig */,
+				762A358B343C38ACB2017843 /* Pods-RawMaterialPriceUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		AC50785D28D578AF00168E4D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				AC50787F28D578B000168E4D /* RawMaterialPriceTests */,
 				AC50788928D578B000168E4D /* RawMaterialPriceUITests */,
 				AC50786728D578AF00168E4D /* Products */,
+				806C6D1BD2807CC997E16DD3 /* Pods */,
+				AD22B45AC5593B35F06EF9F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +158,16 @@
 			path = RawMaterialPriceUITests;
 			sourceTree = "<group>";
 		};
+		AD22B45AC5593B35F06EF9F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F16A63219E4EF9BA94792CF /* Pods_RawMaterialPrice.framework */,
+				9F020AB5472BE7D496505D3E /* Pods_RawMaterialPriceTests.framework */,
+				976475E9BC74EEEF815E2373 /* Pods_RawMaterialPriceUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC50789028D578B000168E4D /* Build configuration list for PBXNativeTarget "RawMaterialPrice" */;
 			buildPhases = (
+				F3725FC89D9C6A54E9AFD876 /* [CP] Check Pods Manifest.lock */,
 				AC50786228D578AF00168E4D /* Sources */,
 				AC50786328D578AF00168E4D /* Frameworks */,
 				AC50786428D578AF00168E4D /* Resources */,
+				3882BE5FB726C48B3110FFCA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC50789328D578B000168E4D /* Build configuration list for PBXNativeTarget "RawMaterialPriceTests" */;
 			buildPhases = (
+				DDE61DEFCEBD7117D33BA170 /* [CP] Check Pods Manifest.lock */,
 				AC50787828D578B000168E4D /* Sources */,
 				AC50787928D578B000168E4D /* Frameworks */,
 				AC50787A28D578B000168E4D /* Resources */,
@@ -169,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC50789628D578B000168E4D /* Build configuration list for PBXNativeTarget "RawMaterialPriceUITests" */;
 			buildPhases = (
+				EA342D37B84817B363D5B1B6 /* [CP] Check Pods Manifest.lock */,
 				AC50788228D578B000168E4D /* Sources */,
 				AC50788328D578B000168E4D /* Frameworks */,
 				AC50788428D578B000168E4D /* Resources */,
@@ -207,7 +252,7 @@
 				};
 			};
 			buildConfigurationList = AC50786128D578AF00168E4D /* Build configuration list for PBXProject "RawMaterialPrice" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -252,6 +297,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3882BE5FB726C48B3110FFCA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RawMaterialPrice/Pods-RawMaterialPrice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RawMaterialPrice/Pods-RawMaterialPrice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RawMaterialPrice/Pods-RawMaterialPrice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDE61DEFCEBD7117D33BA170 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RawMaterialPriceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA342D37B84817B363D5B1B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RawMaterialPriceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3725FC89D9C6A54E9AFD876 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RawMaterialPrice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC50786228D578AF00168E4D /* Sources */ = {
@@ -432,6 +563,7 @@
 		};
 		AC50789128D578B000168E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24A430E40FF9F18E74A6D887 /* Pods-RawMaterialPrice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +592,7 @@
 		};
 		AC50789228D578B000168E4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDE6B8EEAFE05924FB49CF08 /* Pods-RawMaterialPrice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +621,7 @@
 		};
 		AC50789428D578B000168E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB9807AC6BD9B8C8F484F81C /* Pods-RawMaterialPriceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +642,7 @@
 		};
 		AC50789528D578B000168E4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1799D03F6ED605D2DE6CB9D /* Pods-RawMaterialPriceTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +663,7 @@
 		};
 		AC50789728D578B000168E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12BFC32041441DBA6B9BAD20 /* Pods-RawMaterialPriceUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +682,7 @@
 		};
 		AC50789828D578B000168E4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762A358B343C38ACB2017843 /* Pods-RawMaterialPriceUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

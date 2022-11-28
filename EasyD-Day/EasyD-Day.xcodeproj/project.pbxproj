@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CD702B8D1E6EDAFBDF7A867 /* Pods_EasyD_DayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFCBCFFD77C18EB3F8B580C /* Pods_EasyD_DayTests.framework */; };
+		9CAEC2ED28D1F70B37798F52 /* Pods_EasyD_DayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF9F42744605BDFA20A8E8 /* Pods_EasyD_DayUITests.framework */; };
 		AC50782B28D5787B00168E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50782A28D5787B00168E4D /* AppDelegate.swift */; };
 		AC50782D28D5787B00168E4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50782C28D5787B00168E4D /* SceneDelegate.swift */; };
 		AC50782F28D5787B00168E4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50782E28D5787B00168E4D /* ViewController.swift */; };
@@ -17,6 +19,7 @@
 		AC50784528D5787C00168E4D /* EasyD_DayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50784428D5787C00168E4D /* EasyD_DayTests.swift */; };
 		AC50784F28D5787C00168E4D /* EasyD_DayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50784E28D5787C00168E4D /* EasyD_DayUITests.swift */; };
 		AC50785128D5787C00168E4D /* EasyD_DayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50785028D5787C00168E4D /* EasyD_DayUITestsLaunchTests.swift */; };
+		B792395F343A15F2FD179464 /* Pods_EasyD_Day.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A916D61EFE3B63C4069034 /* Pods_EasyD_Day.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02CF9F42744605BDFA20A8E8 /* Pods_EasyD_DayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyD_DayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		122BEAD2271F9D8815135696 /* Pods-EasyD-Day.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyD-Day.release.xcconfig"; path = "Target Support Files/Pods-EasyD-Day/Pods-EasyD-Day.release.xcconfig"; sourceTree = "<group>"; };
+		32657161983A3BBDC04CE982 /* Pods-EasyD-DayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyD-DayTests.debug.xcconfig"; path = "Target Support Files/Pods-EasyD-DayTests/Pods-EasyD-DayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4137EE0FB3164FFEBC226895 /* Pods-EasyD-DayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyD-DayUITests.debug.xcconfig"; path = "Target Support Files/Pods-EasyD-DayUITests/Pods-EasyD-DayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DFCBCFFD77C18EB3F8B580C /* Pods_EasyD_DayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyD_DayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A288341E2729BA4CFE93C8F9 /* Pods-EasyD-DayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyD-DayUITests.release.xcconfig"; path = "Target Support Files/Pods-EasyD-DayUITests/Pods-EasyD-DayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A60EAB46DC796F5596A49968 /* Pods-EasyD-DayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyD-DayTests.release.xcconfig"; path = "Target Support Files/Pods-EasyD-DayTests/Pods-EasyD-DayTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC50782728D5787B00168E4D /* EasyD-Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasyD-Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC50782A28D5787B00168E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC50782C28D5787B00168E4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +61,8 @@
 		AC50784A28D5787C00168E4D /* EasyD-DayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EasyD-DayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC50784E28D5787C00168E4D /* EasyD_DayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyD_DayUITests.swift; sourceTree = "<group>"; };
 		AC50785028D5787C00168E4D /* EasyD_DayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyD_DayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E36324B16CE9FF2DEBAECCEF /* Pods-EasyD-Day.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyD-Day.debug.xcconfig"; path = "Target Support Files/Pods-EasyD-Day/Pods-EasyD-Day.debug.xcconfig"; sourceTree = "<group>"; };
+		E4A916D61EFE3B63C4069034 /* Pods_EasyD_Day.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyD_Day.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B792395F343A15F2FD179464 /* Pods_EasyD_Day.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CD702B8D1E6EDAFBDF7A867 /* Pods_EasyD_DayTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CAEC2ED28D1F70B37798F52 /* Pods_EasyD_DayUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		370051320D57F70F31AF29AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E36324B16CE9FF2DEBAECCEF /* Pods-EasyD-Day.debug.xcconfig */,
+				122BEAD2271F9D8815135696 /* Pods-EasyD-Day.release.xcconfig */,
+				32657161983A3BBDC04CE982 /* Pods-EasyD-DayTests.debug.xcconfig */,
+				A60EAB46DC796F5596A49968 /* Pods-EasyD-DayTests.release.xcconfig */,
+				4137EE0FB3164FFEBC226895 /* Pods-EasyD-DayUITests.debug.xcconfig */,
+				A288341E2729BA4CFE93C8F9 /* Pods-EasyD-DayUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		48A87D339ABB805E5E580568 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4A916D61EFE3B63C4069034 /* Pods_EasyD_Day.framework */,
+				9DFCBCFFD77C18EB3F8B580C /* Pods_EasyD_DayTests.framework */,
+				02CF9F42744605BDFA20A8E8 /* Pods_EasyD_DayUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC50781E28D5787B00168E4D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +124,8 @@
 				AC50784328D5787C00168E4D /* EasyD-DayTests */,
 				AC50784D28D5787C00168E4D /* EasyD-DayUITests */,
 				AC50782828D5787B00168E4D /* Products */,
+				370051320D57F70F31AF29AC /* Pods */,
+				48A87D339ABB805E5E580568 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC50785428D5787C00168E4D /* Build configuration list for PBXNativeTarget "EasyD-Day" */;
 			buildPhases = (
+				026EFF0447FB458AD1344CCC /* [CP] Check Pods Manifest.lock */,
 				AC50782328D5787B00168E4D /* Sources */,
 				AC50782428D5787B00168E4D /* Frameworks */,
 				AC50782528D5787B00168E4D /* Resources */,
+				69B0B5C02C961EDF9AB1782C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC50785728D5787C00168E4D /* Build configuration list for PBXNativeTarget "EasyD-DayTests" */;
 			buildPhases = (
+				E7EDAEFB5FE0BD08FA60E30E /* [CP] Check Pods Manifest.lock */,
 				AC50783C28D5787C00168E4D /* Sources */,
 				AC50783D28D5787C00168E4D /* Frameworks */,
 				AC50783E28D5787C00168E4D /* Resources */,
@@ -172,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC50785A28D5787C00168E4D /* Build configuration list for PBXNativeTarget "EasyD-DayUITests" */;
 			buildPhases = (
+				06A845BCDB6EE66F59E57200 /* [CP] Check Pods Manifest.lock */,
 				AC50784628D5787C00168E4D /* Sources */,
 				AC50784728D5787C00168E4D /* Frameworks */,
 				AC50784828D5787C00168E4D /* Resources */,
@@ -210,7 +255,7 @@
 				};
 			};
 			buildConfigurationList = AC50782228D5787B00168E4D /* Build configuration list for PBXProject "EasyD-Day" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -255,6 +300,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		026EFF0447FB458AD1344CCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyD-Day-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		06A845BCDB6EE66F59E57200 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyD-DayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69B0B5C02C961EDF9AB1782C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyD-Day/Pods-EasyD-Day-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyD-Day/Pods-EasyD-Day-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyD-Day/Pods-EasyD-Day-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7EDAEFB5FE0BD08FA60E30E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyD-DayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC50782328D5787B00168E4D /* Sources */ = {
@@ -436,6 +567,7 @@
 		};
 		AC50785528D5787C00168E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E36324B16CE9FF2DEBAECCEF /* Pods-EasyD-Day.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +596,7 @@
 		};
 		AC50785628D5787C00168E4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 122BEAD2271F9D8815135696 /* Pods-EasyD-Day.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +625,7 @@
 		};
 		AC50785828D5787C00168E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32657161983A3BBDC04CE982 /* Pods-EasyD-DayTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +646,7 @@
 		};
 		AC50785928D5787C00168E4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A60EAB46DC796F5596A49968 /* Pods-EasyD-DayTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +667,7 @@
 		};
 		AC50785B28D5787C00168E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4137EE0FB3164FFEBC226895 /* Pods-EasyD-DayUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +686,7 @@
 		};
 		AC50785C28D5787C00168E4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A288341E2729BA4CFE93C8F9 /* Pods-EasyD-DayUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

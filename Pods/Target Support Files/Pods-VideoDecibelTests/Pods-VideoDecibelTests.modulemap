@@ -1,0 +1,6 @@
+framework module Pods_VideoDecibelTests {
+  umbrella header "Pods-VideoDecibelTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
