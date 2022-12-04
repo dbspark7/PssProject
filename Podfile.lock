@@ -3,6 +3,9 @@ PODS:
     - Charts/Core (= 4.1.0)
   - Charts/Core (4.1.0):
     - SwiftAlgorithms (~> 1.0)
+  - CocoaLumberjack/Core (3.8.0)
+  - CocoaLumberjack/Swift (3.8.0):
+    - CocoaLumberjack/Core
   - M13Checkbox (3.4.0)
   - MaterialComponents/ActivityIndicator (124.2.0):
     - MaterialComponents/Palettes
@@ -142,10 +145,12 @@ PODS:
   - RxRelay (6.1.0):
     - RxSwift (= 6.1.0)
   - RxSwift (6.1.0)
+  - SnapKit (5.0.1)
   - SwiftAlgorithms (1.0.0)
 
 DEPENDENCIES:
   - Charts
+  - CocoaLumberjack/Swift
   - M13Checkbox
   - MaterialComponents/ActivityIndicator
   - MaterialComponents/AppBar
@@ -153,10 +158,12 @@ DEPENDENCIES:
   - MaterialComponents/Snackbar
   - RxCocoa (= 6.1.0)
   - RxSwift (= 6.1.0)
+  - SnapKit (= 5.0.1)
 
 SPEC REPOS:
   trunk:
     - Charts
+    - CocoaLumberjack
     - M13Checkbox
     - MaterialComponents
     - MDFInternationalization
@@ -166,10 +173,12 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SnapKit
     - SwiftAlgorithms
 
 SPEC CHECKSUMS:
   Charts: 354f86803d11d9c35de280587fef50d1af063978
+  CocoaLumberjack: 78abfb691154e2a9df8ded4350d504ee19d90732
   M13Checkbox: 6f59404540ac98ba83a3d1afac335895a40c6a5d
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
@@ -179,8 +188,9 @@ SPEC CHECKSUMS:
   RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
   RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
   RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
 
-PODFILE CHECKSUM: f8401d6c79b6fd02645a3008925bd4aabda3c89b
+PODFILE CHECKSUM: d75126af172930d885e7daf43e7ee30784de5350
 
 COCOAPODS: 1.11.3

@@ -14,6 +14,9 @@
       location = "group:PssCore/PssCore.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:PssLogger/PssLogger.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

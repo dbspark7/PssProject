@@ -10,6 +10,7 @@ project 'EasyD-Day/EasyD-Day.project'
 project 'RawMaterialPrice/RawMaterialPrice.project'
 project 'VideoDecibel/VideoDecibel.project'
 project 'PssCore/PssCore.project'
+project 'PssLogger/PssLogger.project'
 
 def commonPods1
   pod 'RxSwift', '6.1.0'
@@ -22,12 +23,19 @@ def commonPods2
   pod 'MaterialComponents/BottomNavigation'
   pod 'MaterialComponents/Snackbar'
   pod 'M13Checkbox'
+
+  pod 'SnapKit', '5.0.1'
+end
+
+def commonPods3
+  pod 'CocoaLumberjack/Swift'
 end
 
 target 'EasyD-Day' do
   project 'EasyD-Day/EasyD-Day.project'
   commonPods1
   commonPods2
+  commonPods3
 
   target 'EasyD-DayTests' do
     inherit! :search_paths
@@ -44,6 +52,7 @@ target 'RawMaterialPrice' do
   project 'RawMaterialPrice/RawMaterialPrice.project'
   commonPods1
   commonPods2
+  commonPods3
 
   target 'RawMaterialPriceTests' do
     inherit! :search_paths
@@ -60,6 +69,7 @@ target 'VideoDecibel' do
   project 'VideoDecibel/VideoDecibel.project'
   commonPods1
   commonPods2
+  commonPods3
   pod 'Charts'
 
   target 'VideoDecibelTests' do
@@ -77,6 +87,12 @@ target 'PssCore' do
   project 'PssCore/PssCore.project'
   commonPods1
   commonPods2
+  commonPods3
+end
+
+target 'PssLogger' do
+  project 'PssLogger/PssLogger.project'
+  commonPods3
 end
 
 post_install do |installer|
