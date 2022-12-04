@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A325A12D6A3190A211D590EE /* Pods_PssCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E266751EAF926CAF2FCAC4 /* Pods_PssCore.framework */; };
+		AC04DE8C293C32A70008371D /* AlertWithCheckBoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04DE8A293C32A70008371D /* AlertWithCheckBoxViewController.swift */; };
+		AC04DE8D293C32A70008371D /* AlertWithCheckBoxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC04DE8B293C32A70008371D /* AlertWithCheckBoxViewController.xib */; };
+		AC04DE92293C34410008371D /* CoreDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04DE91293C34410008371D /* CoreDefine.swift */; };
+		AC04DE98293C36120008371D /* CoreExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04DE97293C36120008371D /* CoreExtension.swift */; };
+		AC04DE9A293C37840008371D /* CoreLogUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04DE99293C37840008371D /* CoreLogUtil.swift */; };
 		AC50780928D5785A00168E4D /* PssCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = AC50780828D5785A00168E4D /* PssCore.docc */; };
 		AC50780F28D5785B00168E4D /* PssCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC50780428D5785A00168E4D /* PssCore.framework */; };
 		AC50781428D5785B00168E4D /* PssCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50781328D5785B00168E4D /* PssCoreTests.swift */; };
@@ -28,6 +33,11 @@
 		29639AD480BF9575E438095A /* Pods-PssCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PssCore.debug.xcconfig"; path = "Target Support Files/Pods-PssCore/Pods-PssCore.debug.xcconfig"; sourceTree = "<group>"; };
 		55E266751EAF926CAF2FCAC4 /* Pods_PssCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PssCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0A636133B5AB9919FDF61C /* Pods-PssCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PssCore.release.xcconfig"; path = "Target Support Files/Pods-PssCore/Pods-PssCore.release.xcconfig"; sourceTree = "<group>"; };
+		AC04DE8A293C32A70008371D /* AlertWithCheckBoxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertWithCheckBoxViewController.swift; sourceTree = "<group>"; };
+		AC04DE8B293C32A70008371D /* AlertWithCheckBoxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertWithCheckBoxViewController.xib; sourceTree = "<group>"; };
+		AC04DE91293C34410008371D /* CoreDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDefine.swift; sourceTree = "<group>"; };
+		AC04DE97293C36120008371D /* CoreExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreExtension.swift; sourceTree = "<group>"; };
+		AC04DE99293C37840008371D /* CoreLogUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLogUtil.swift; sourceTree = "<group>"; };
 		AC50780428D5785A00168E4D /* PssCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PssCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC50780728D5785A00168E4D /* PssCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PssCore.h; sourceTree = "<group>"; };
 		AC50780828D5785A00168E4D /* PssCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PssCore.docc; sourceTree = "<group>"; };
@@ -73,6 +83,25 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		AC04DE89293C329A0008371D /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				AC04DE8A293C32A70008371D /* AlertWithCheckBoxViewController.swift */,
+				AC04DE8B293C32A70008371D /* AlertWithCheckBoxViewController.xib */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		AC04DE8E293C341F0008371D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AC04DE91293C34410008371D /* CoreDefine.swift */,
+				AC04DE97293C36120008371D /* CoreExtension.swift */,
+				AC04DE99293C37840008371D /* CoreLogUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		AC5077FA28D5785A00168E4D = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +125,8 @@
 		AC50780628D5785A00168E4D /* PssCore */ = {
 			isa = PBXGroup;
 			children = (
+				AC04DE89293C329A0008371D /* Alert */,
+				AC04DE8E293C341F0008371D /* Utils */,
 				AC50780728D5785A00168E4D /* PssCore.h */,
 				AC50780828D5785A00168E4D /* PssCore.docc */,
 			);
@@ -203,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC04DE8D293C32A70008371D /* AlertWithCheckBoxViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +277,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC04DE9A293C37840008371D /* CoreLogUtil.swift in Sources */,
+				AC04DE98293C36120008371D /* CoreExtension.swift in Sources */,
+				AC04DE8C293C32A70008371D /* AlertWithCheckBoxViewController.swift in Sources */,
+				AC04DE92293C34410008371D /* CoreDefine.swift in Sources */,
 				AC50780928D5785A00168E4D /* PssCore.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +491,7 @@
 		AC50781C28D5785B00168E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WY5E8U82TN;
@@ -471,6 +508,7 @@
 		AC50781D28D5785B00168E4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WY5E8U82TN;

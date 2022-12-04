@@ -8,15 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		39FFCC30293447450053C113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FFCC2F293447450053C113 /* AppDelegate.swift */; };
-		39FFCC32293447450053C113 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FFCC31293447450053C113 /* SceneDelegate.swift */; };
-		39FFCC34293447450053C113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FFCC33293447450053C113 /* ViewController.swift */; };
-		39FFCC37293447450053C113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FFCC35293447450053C113 /* Main.storyboard */; };
+		39FFCC34293447450053C113 /* VideoDecibelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FFCC33293447450053C113 /* VideoDecibelViewController.swift */; };
+		39FFCC37293447450053C113 /* VideoDecibelViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FFCC35293447450053C113 /* VideoDecibelViewController.storyboard */; };
 		39FFCC39293447460053C113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FFCC38293447460053C113 /* Assets.xcassets */; };
 		39FFCC3C293447460053C113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FFCC3A293447460053C113 /* LaunchScreen.storyboard */; };
 		39FFCC47293447470053C113 /* VideoDecibelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FFCC46293447470053C113 /* VideoDecibelTests.swift */; };
 		39FFCC51293447470053C113 /* VideoDecibelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FFCC50293447470053C113 /* VideoDecibelUITests.swift */; };
 		39FFCC53293447470053C113 /* VideoDecibelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FFCC52293447470053C113 /* VideoDecibelUITestsLaunchTests.swift */; };
 		67E54F7338B7A17586E6EA56 /* Pods_VideoDecibelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F0760A22C36EFC8080DA3D /* Pods_VideoDecibelTests.framework */; };
+		AC04DE86293C2AEF0008371D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04DE85293C2AEF0008371D /* HomeViewController.swift */; };
+		AC04DE88293C2B350008371D /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC04DE87293C2B350008371D /* HomeViewController.storyboard */; };
+		AC04DE95293C345D0008371D /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04DE94293C345D0008371D /* Define.swift */; };
 		AF6734481CE3FE94A968DDFA /* Pods_VideoDecibel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0624BB6BA62C14D38C491A5 /* Pods_VideoDecibel.framework */; };
 		E19F8778F6FD2C17D307A62D /* Pods_VideoDecibelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4979F62FEC03ECAC92192B91 /* Pods_VideoDecibelUITests.framework */; };
 /* End PBXBuildFile section */
@@ -42,9 +44,8 @@
 		354056EADD2481780DB8A1FE /* Pods-VideoDecibel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecibel.release.xcconfig"; path = "Target Support Files/Pods-VideoDecibel/Pods-VideoDecibel.release.xcconfig"; sourceTree = "<group>"; };
 		39FFCC2C293447450053C113 /* VideoDecibel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoDecibel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FFCC2F293447450053C113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		39FFCC31293447450053C113 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		39FFCC33293447450053C113 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		39FFCC36293447450053C113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39FFCC33293447450053C113 /* VideoDecibelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDecibelViewController.swift; sourceTree = "<group>"; };
+		39FFCC36293447450053C113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/VideoDecibelViewController.storyboard; sourceTree = "<group>"; };
 		39FFCC38293447460053C113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39FFCC3B293447460053C113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39FFCC3D293447460053C113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +57,9 @@
 		4979F62FEC03ECAC92192B91 /* Pods_VideoDecibelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoDecibelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5110D616219F9CE8E0354EB4 /* Pods-VideoDecibel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecibel.debug.xcconfig"; path = "Target Support Files/Pods-VideoDecibel/Pods-VideoDecibel.debug.xcconfig"; sourceTree = "<group>"; };
 		6A2A6D290834CB3B8526D428 /* Pods-VideoDecibelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecibelTests.release.xcconfig"; path = "Target Support Files/Pods-VideoDecibelTests/Pods-VideoDecibelTests.release.xcconfig"; sourceTree = "<group>"; };
+		AC04DE85293C2AEF0008371D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AC04DE87293C2B350008371D /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		AC04DE94293C345D0008371D /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
 		B98D0D5240E077DE964EC6F2 /* Pods-VideoDecibelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecibelTests.debug.xcconfig"; path = "Target Support Files/Pods-VideoDecibelTests/Pods-VideoDecibelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0624BB6BA62C14D38C491A5 /* Pods_VideoDecibel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoDecibel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47676CC8A21DCF83720A390 /* Pods-VideoDecibelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecibelUITests.release.xcconfig"; path = "Target Support Files/Pods-VideoDecibelUITests/Pods-VideoDecibelUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,10 +134,12 @@
 		39FFCC2E293447450053C113 /* VideoDecibel */ = {
 			isa = PBXGroup;
 			children = (
+				AC04DE93293C344E0008371D /* Define */,
 				39FFCC2F293447450053C113 /* AppDelegate.swift */,
-				39FFCC31293447450053C113 /* SceneDelegate.swift */,
-				39FFCC33293447450053C113 /* ViewController.swift */,
-				39FFCC35293447450053C113 /* Main.storyboard */,
+				AC04DE87293C2B350008371D /* HomeViewController.storyboard */,
+				AC04DE85293C2AEF0008371D /* HomeViewController.swift */,
+				39FFCC35293447450053C113 /* VideoDecibelViewController.storyboard */,
+				39FFCC33293447450053C113 /* VideoDecibelViewController.swift */,
 				39FFCC38293447460053C113 /* Assets.xcassets */,
 				39FFCC3A293447460053C113 /* LaunchScreen.storyboard */,
 				39FFCC3D293447460053C113 /* Info.plist */,
@@ -166,6 +172,14 @@
 				4979F62FEC03ECAC92192B91 /* Pods_VideoDecibelUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC04DE93293C344E0008371D /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				AC04DE94293C345D0008371D /* Define.swift */,
+			);
+			path = Define;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +290,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC04DE88293C2B350008371D /* HomeViewController.storyboard in Resources */,
 				39FFCC3C293447460053C113 /* LaunchScreen.storyboard in Resources */,
 				39FFCC39293447460053C113 /* Assets.xcassets in Resources */,
-				39FFCC37293447450053C113 /* Main.storyboard in Resources */,
+				39FFCC37293447450053C113 /* VideoDecibelViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,9 +404,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39FFCC34293447450053C113 /* ViewController.swift in Sources */,
+				39FFCC34293447450053C113 /* VideoDecibelViewController.swift in Sources */,
 				39FFCC30293447450053C113 /* AppDelegate.swift in Sources */,
-				39FFCC32293447450053C113 /* SceneDelegate.swift in Sources */,
+				AC04DE95293C345D0008371D /* Define.swift in Sources */,
+				AC04DE86293C2AEF0008371D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,12 +444,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		39FFCC35293447450053C113 /* Main.storyboard */ = {
+		39FFCC35293447450053C113 /* VideoDecibelViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				39FFCC36293447450053C113 /* Base */,
 			);
-			name = Main.storyboard;
+			name = VideoDecibelViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		39FFCC3A293447460053C113 /* LaunchScreen.storyboard */ = {
@@ -497,7 +513,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -551,7 +567,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -572,12 +588,15 @@
 				DEVELOPMENT_TEAM = WY5E8U82TN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VideoDecibel/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = temp;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = temp;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = temp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				INFOPLIST_KEY_UIMainStoryboardFile = HomeViewController;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -585,6 +604,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.ipdisk.dbspark711.VideoDecibel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -602,12 +624,15 @@
 				DEVELOPMENT_TEAM = WY5E8U82TN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VideoDecibel/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = temp;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = temp;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = temp;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				INFOPLIST_KEY_UIMainStoryboardFile = HomeViewController;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -615,6 +640,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.ipdisk.dbspark711.VideoDecibel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

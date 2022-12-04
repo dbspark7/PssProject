@@ -11,7 +11,7 @@ import Photos
 import Charts
 import ReplayKit
 
-class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
+class VideoDecibelViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
     
     @IBOutlet var videoView: UIView!
     @IBOutlet var chartView: LineChartView!
@@ -425,7 +425,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
 }
 
-extension ViewController: ChartViewDelegate {
+extension VideoDecibelViewController: ChartViewDelegate {
     func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
         
     }
