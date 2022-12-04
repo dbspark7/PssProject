@@ -1,15 +1,15 @@
 //
-//  MyAlertWithCheckBoxViewController.swift
-//  EveryXCam
+//  AlertWithCheckBoxViewController.swift
+//  PssCore
 //
-//  Created by iot-parksooseong on 2021/08/09.
-//  Copyright © 2021 Truen. All rights reserved.
+//  Created by 박수성 on 2022/12/04.
 //
 
 import UIKit
+import SnapKit
 import M13Checkbox
 
-@objc class SwiftAlertWithCheckBoxViewController: UIViewController {
+public class AlertWithCheckBoxViewController: UIViewController {
     @IBOutlet var lblNotice: UILabel!
     
     @IBOutlet var vCheckBox: UIView!
@@ -25,25 +25,25 @@ import M13Checkbox
     private var lHandler: ResponseBlock?
     private var rHandler: ResponseBlock?
     
-    override var prefersStatusBarHidden: Bool {
+    override public var prefersStatusBarHidden: Bool {
         return false
     }
     
-    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+    override public var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
         return .portrait
     }
     
-    override var shouldAutorotate: Bool {
+    override public var shouldAutorotate: Bool {
         return true
     }
     
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    override public var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return [.portrait, .landscape]
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
-        DLog("[SwiftAlertWithCheckBoxViewController][LifeCycle] viewDidLoad")
+        DLog("viewDidLoad")
         
         lblNotice.lineBreakMode = .byCharWrapping
         vCheckBox.addSubview(chkBtn)
@@ -52,7 +52,7 @@ import M13Checkbox
         chkBtn.markType = .checkmark
         chkBtn.checkmarkLineWidth = 2
         chkBtn.boxLineWidth = 2
-        chkBtn.tintColor = MyColor.flutterPrimary()
+        chkBtn.tintColor = tintColor
         chkBtn.animationDuration = 0.0
         chkBtn.snp.makeConstraints { make in
             make.top.equalToSuperview()
@@ -60,36 +60,36 @@ import M13Checkbox
             make.height.width.equalTo(24)
         }
         
-        btnLeft.setTitleColor(MyColor.flutterPrimary(), for: .normal)
-        btnRight.setTitleColor(MyColor.flutterPrimary(), for: .normal)
-        btnOK.setTitleColor(MyColor.flutterPrimary(), for: .normal)
+        btnLeft.setTitleColor(tintColor, for: .normal)
+        btnRight.setTitleColor(tintColor, for: .normal)
+        btnOK.setTitleColor(tintColor, for: .normal)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        DLog("[SwiftAlertWithCheckBoxViewController][LifeCycle] viewWillAppear")
+        DLog("viewWillAppear")
     }
     
-    override func viewDidLayoutSubviews() {
+    override public func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         self.view.frame = UIScreen.main.bounds
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override public func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        DLog("[SwiftAlertWithCheckBoxViewController][LifeCycle] viewWillDisappear")
+        DLog("viewWillDisappear")
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
+    override public func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        DLog("[SwiftAlertWithCheckBoxViewController][LifeCycle] viewDidDisappear")
+        DLog("viewDidDisappear")
     }
     
     deinit {
-        DLog("[SwiftAlertWithCheckBoxViewController][LifeCycle] deinit")
+        DLog("deinit")
     }
     
-    @objc func show_typeYesOrNo(withMsg msg: String, checkboxMsg: String, bCheck: Bool, noHandler: @escaping ResponseBlock, yesHandler: @escaping ResponseBlock) {
+    public func show_typeYesOrNo(withMsg msg: String, checkboxMsg: String, bCheck: Bool, noHandler: @escaping ResponseBlock, yesHandler: @escaping ResponseBlock) {
         lHandler = noHandler
         rHandler = yesHandler
         
@@ -113,7 +113,7 @@ import M13Checkbox
         showWithAnimation(self.view)
     }
     
-    @objc func show_typeOK(withMsg msg: String, checkboxMsg: String, okHandler: @escaping ResponseBlock) {
+    public func show_typeOK(withMsg msg: String, checkboxMsg: String, okHandler: @escaping ResponseBlock) {
         self.okHandler = okHandler
         
         lblNotice.text = msg
@@ -141,7 +141,7 @@ import M13Checkbox
 //
 //    }
     
-    @objc func hide() {
+    public func hide() {
         self.view.isHidden = true
     }
     

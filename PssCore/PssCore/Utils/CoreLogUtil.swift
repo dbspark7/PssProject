@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import PssLogger
 
 public func DLog(_ message: @autoclosure () -> String, filename: String = #file, line: Int = #line) {
 #if DEBUG
     NSLog("<\(URL(string: filename)?.lastPathComponent ?? filename):\(line)> %@", message())
-//    TruenLogger.message("<\(URL(string: filename)?.lastPathComponent ?? filename):\(line)> \(message())")
+    PssLogger.message("<\(URL(string: filename)?.lastPathComponent ?? filename):\(line)> \(message())")
 #endif
 }

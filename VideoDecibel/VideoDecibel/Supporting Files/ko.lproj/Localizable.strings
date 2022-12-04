@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  VideoDecibel
+
+  Created by 박수성 on 2022/12/04.
+  
+*/
+
+"button_yes" = "예";
+"button_no" = "아니오";
+"button_ok" = "확인";

@@ -8,10 +8,16 @@
 import UIKit
 import AVFoundation
 import Photos
+import PssCore
 
 class HomeViewController: UIViewController {
+    private let alertViewController = AlertViewController(nibName: "AlertViewController", bundle: Bundle(identifier: "kr.co.ipdisk.dbspark711.PssCore")!)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addSubview(alertViewController.view)
+        alertViewController.hide()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,17 +37,25 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func onClickVideoDecibel(_ sender: UIButton) {
-        PHPhotoLibrary.requestAuthorization { status in
+        PHPhotoLibrary.requestAuthorization { [weak self] status in
             if status == .authorized {
-                AVAudioSession.sharedInstance().requestRecordPermission { granted in
+                AVAudioSession.sharedInstance().requestRecordPermission { [weak self] granted in
                     if granted {
                         
                     } else {
-                        
+                        DispatchQueue.main.async {
+                            self?.alertViewController.show_typeOK(withMsg: "임시1") {
+                                
+                            }
+                        }
                     }
                 }
             } else {
-                
+                DispatchQueue.main.async {
+                    self?.alertViewController.show_typeOK(withMsg: "임시2") {
+                        
+                    }
+                }
             }
         }
     }

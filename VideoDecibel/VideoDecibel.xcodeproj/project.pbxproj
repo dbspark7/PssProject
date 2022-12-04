@@ -19,6 +19,11 @@
 		AC04DE86293C2AEF0008371D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04DE85293C2AEF0008371D /* HomeViewController.swift */; };
 		AC04DE88293C2B350008371D /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC04DE87293C2B350008371D /* HomeViewController.storyboard */; };
 		AC04DE95293C345D0008371D /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04DE94293C345D0008371D /* Define.swift */; };
+		AC04DEC6293C3BAD0008371D /* PssCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC04DEC5293C3BAD0008371D /* PssCore.framework */; };
+		AC04DEC7293C3BAD0008371D /* PssCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC04DEC5293C3BAD0008371D /* PssCore.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC04DECA293C3BB50008371D /* PssLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC04DEC9293C3BB50008371D /* PssLogger.framework */; };
+		AC04DECB293C3BB50008371D /* PssLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC04DEC9293C3BB50008371D /* PssLogger.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC04DED1293C3CA20008371D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC04DED3293C3CA20008371D /* Localizable.strings */; };
 		AF6734481CE3FE94A968DDFA /* Pods_VideoDecibel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0624BB6BA62C14D38C491A5 /* Pods_VideoDecibel.framework */; };
 		E19F8778F6FD2C17D307A62D /* Pods_VideoDecibelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4979F62FEC03ECAC92192B91 /* Pods_VideoDecibelUITests.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +45,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AC04DEC8293C3BAD0008371D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC04DEC7293C3BAD0008371D /* PssCore.framework in Embed Frameworks */,
+				AC04DECB293C3BB50008371D /* PssLogger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		354056EADD2481780DB8A1FE /* Pods-VideoDecibel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecibel.release.xcconfig"; path = "Target Support Files/Pods-VideoDecibel/Pods-VideoDecibel.release.xcconfig"; sourceTree = "<group>"; };
 		39FFCC2C293447450053C113 /* VideoDecibel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoDecibel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +80,12 @@
 		AC04DE85293C2AEF0008371D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AC04DE87293C2B350008371D /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		AC04DE94293C345D0008371D /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		AC04DEC5293C3BAD0008371D /* PssCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PssCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC04DEC9293C3BB50008371D /* PssLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PssLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC04DECD293C3C5B0008371D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/VideoDecibelViewController.strings; sourceTree = "<group>"; };
+		AC04DECE293C3C5B0008371D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		AC04DED2293C3CA20008371D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AC04DED4293C3CA60008371D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B98D0D5240E077DE964EC6F2 /* Pods-VideoDecibelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecibelTests.debug.xcconfig"; path = "Target Support Files/Pods-VideoDecibelTests/Pods-VideoDecibelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0624BB6BA62C14D38C491A5 /* Pods_VideoDecibel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoDecibel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47676CC8A21DCF83720A390 /* Pods-VideoDecibelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecibelUITests.release.xcconfig"; path = "Target Support Files/Pods-VideoDecibelUITests/Pods-VideoDecibelUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,6 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC04DECA293C3BB50008371D /* PssLogger.framework in Frameworks */,
+				AC04DEC6293C3BAD0008371D /* PssCore.framework in Frameworks */,
 				AF6734481CE3FE94A968DDFA /* Pods_VideoDecibel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				AC04DE93293C344E0008371D /* Define */,
+				AC04DECC293C3C100008371D /* Supporting Files */,
 				39FFCC2F293447450053C113 /* AppDelegate.swift */,
 				AC04DE87293C2B350008371D /* HomeViewController.storyboard */,
 				AC04DE85293C2AEF0008371D /* HomeViewController.swift */,
@@ -167,6 +196,8 @@
 		7808E32108633AF0F213D262 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC04DEC9293C3BB50008371D /* PssLogger.framework */,
+				AC04DEC5293C3BAD0008371D /* PssCore.framework */,
 				C0624BB6BA62C14D38C491A5 /* Pods_VideoDecibel.framework */,
 				E4F0760A22C36EFC8080DA3D /* Pods_VideoDecibelTests.framework */,
 				4979F62FEC03ECAC92192B91 /* Pods_VideoDecibelUITests.framework */,
@@ -182,6 +213,14 @@
 			path = Define;
 			sourceTree = "<group>";
 		};
+		AC04DECC293C3C100008371D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC04DED3293C3CA20008371D /* Localizable.strings */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -194,6 +233,7 @@
 				39FFCC29293447450053C113 /* Frameworks */,
 				39FFCC2A293447450053C113 /* Resources */,
 				26F8D986025A1FC7BFA0C877 /* [CP] Embed Pods Frameworks */,
+				AC04DEC8293C3BAD0008371D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,6 +312,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 39FFCC23293447450053C113;
 			productRefGroup = 39FFCC2D293447450053C113 /* Products */;
@@ -290,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC04DED1293C3CA20008371D /* Localizable.strings in Resources */,
 				AC04DE88293C2B350008371D /* HomeViewController.storyboard in Resources */,
 				39FFCC3C293447460053C113 /* LaunchScreen.storyboard in Resources */,
 				39FFCC39293447460053C113 /* Assets.xcassets in Resources */,
@@ -448,6 +490,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				39FFCC36293447450053C113 /* Base */,
+				AC04DECD293C3C5B0008371D /* ko */,
 			);
 			name = VideoDecibelViewController.storyboard;
 			sourceTree = "<group>";
@@ -456,8 +499,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				39FFCC3B293447460053C113 /* Base */,
+				AC04DECE293C3C5B0008371D /* ko */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AC04DED3293C3CA20008371D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC04DED2293C3CA20008371D /* en */,
+				AC04DED4293C3CA60008371D /* ko */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -467,6 +520,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -527,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

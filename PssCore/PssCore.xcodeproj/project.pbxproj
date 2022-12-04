@@ -13,6 +13,10 @@
 		AC04DE92293C34410008371D /* CoreDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04DE91293C34410008371D /* CoreDefine.swift */; };
 		AC04DE98293C36120008371D /* CoreExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04DE97293C36120008371D /* CoreExtension.swift */; };
 		AC04DE9A293C37840008371D /* CoreLogUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04DE99293C37840008371D /* CoreLogUtil.swift */; };
+		AC04DEC2293C3B060008371D /* PssLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC04DEC1293C3B060008371D /* PssLogger.framework */; };
+		AC04DEC3293C3B060008371D /* PssLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC04DEC1293C3B060008371D /* PssLogger.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC04DEDE293C3EBD0008371D /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04DEDC293C3EBD0008371D /* AlertViewController.swift */; };
+		AC04DEDF293C3EBD0008371D /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC04DEDD293C3EBD0008371D /* AlertViewController.xib */; };
 		AC50780928D5785A00168E4D /* PssCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = AC50780828D5785A00168E4D /* PssCore.docc */; };
 		AC50780F28D5785B00168E4D /* PssCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC50780428D5785A00168E4D /* PssCore.framework */; };
 		AC50781428D5785B00168E4D /* PssCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC50781328D5785B00168E4D /* PssCoreTests.swift */; };
@@ -29,6 +33,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AC04DEC4293C3B060008371D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC04DEC3293C3B060008371D /* PssLogger.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		29639AD480BF9575E438095A /* Pods-PssCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PssCore.debug.xcconfig"; path = "Target Support Files/Pods-PssCore/Pods-PssCore.debug.xcconfig"; sourceTree = "<group>"; };
 		55E266751EAF926CAF2FCAC4 /* Pods_PssCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PssCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +56,9 @@
 		AC04DE91293C34410008371D /* CoreDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDefine.swift; sourceTree = "<group>"; };
 		AC04DE97293C36120008371D /* CoreExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreExtension.swift; sourceTree = "<group>"; };
 		AC04DE99293C37840008371D /* CoreLogUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLogUtil.swift; sourceTree = "<group>"; };
+		AC04DEC1293C3B060008371D /* PssLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PssLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC04DEDC293C3EBD0008371D /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		AC04DEDD293C3EBD0008371D /* AlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
 		AC50780428D5785A00168E4D /* PssCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PssCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC50780728D5785A00168E4D /* PssCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PssCore.h; sourceTree = "<group>"; };
 		AC50780828D5785A00168E4D /* PssCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PssCore.docc; sourceTree = "<group>"; };
@@ -51,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A325A12D6A3190A211D590EE /* Pods_PssCore.framework in Frameworks */,
+				AC04DEC2293C3B060008371D /* PssLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +90,7 @@
 		7D7E1F91EBC85EE2332A2C5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC04DEC1293C3B060008371D /* PssLogger.framework */,
 				55E266751EAF926CAF2FCAC4 /* Pods_PssCore.framework */,
 			);
 			name = Frameworks;
@@ -86,6 +109,8 @@
 		AC04DE89293C329A0008371D /* Alert */ = {
 			isa = PBXGroup;
 			children = (
+				AC04DEDC293C3EBD0008371D /* AlertViewController.swift */,
+				AC04DEDD293C3EBD0008371D /* AlertViewController.xib */,
 				AC04DE8A293C32A70008371D /* AlertWithCheckBoxViewController.swift */,
 				AC04DE8B293C32A70008371D /* AlertWithCheckBoxViewController.xib */,
 			);
@@ -164,6 +189,7 @@
 				AC50780028D5785A00168E4D /* Sources */,
 				AC50780128D5785A00168E4D /* Frameworks */,
 				AC50780228D5785A00168E4D /* Resources */,
+				AC04DEC4293C3B060008371D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +243,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = AC5077FA28D5785A00168E4D;
 			productRefGroup = AC50780528D5785A00168E4D /* Products */;
@@ -235,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC04DE8D293C32A70008371D /* AlertWithCheckBoxViewController.xib in Resources */,
+				AC04DEDF293C3EBD0008371D /* AlertViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC04DE9A293C37840008371D /* CoreLogUtil.swift in Sources */,
+				AC04DEDE293C3EBD0008371D /* AlertViewController.swift in Sources */,
 				AC04DE98293C36120008371D /* CoreExtension.swift in Sources */,
 				AC04DE8C293C32A70008371D /* AlertWithCheckBoxViewController.swift in Sources */,
 				AC04DE92293C34410008371D /* CoreDefine.swift in Sources */,
@@ -308,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -355,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -371,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -412,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -438,13 +469,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.pss711.PssCore;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.ipdisk.dbspark711.PssCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -470,13 +502,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.pss711.PssCore;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.ipdisk.dbspark711.PssCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
