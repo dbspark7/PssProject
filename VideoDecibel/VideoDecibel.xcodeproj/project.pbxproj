@@ -24,6 +24,7 @@
 		AC04DECA293C3BB50008371D /* PssLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC04DEC9293C3BB50008371D /* PssLogger.framework */; };
 		AC04DECB293C3BB50008371D /* PssLogger.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC04DEC9293C3BB50008371D /* PssLogger.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AC04DED1293C3CA20008371D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC04DED3293C3CA20008371D /* Localizable.strings */; };
+		AC04DEE2293C49190008371D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC04DEE4293C49190008371D /* InfoPlist.strings */; };
 		AF6734481CE3FE94A968DDFA /* Pods_VideoDecibel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0624BB6BA62C14D38C491A5 /* Pods_VideoDecibel.framework */; };
 		E19F8778F6FD2C17D307A62D /* Pods_VideoDecibelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4979F62FEC03ECAC92192B91 /* Pods_VideoDecibelUITests.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,8 @@
 		AC04DECE293C3C5B0008371D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		AC04DED2293C3CA20008371D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AC04DED4293C3CA60008371D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AC04DEE3293C49190008371D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AC04DEE5293C491C0008371D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B98D0D5240E077DE964EC6F2 /* Pods-VideoDecibelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecibelTests.debug.xcconfig"; path = "Target Support Files/Pods-VideoDecibelTests/Pods-VideoDecibelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0624BB6BA62C14D38C491A5 /* Pods_VideoDecibel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoDecibel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47676CC8A21DCF83720A390 /* Pods-VideoDecibelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDecibelUITests.release.xcconfig"; path = "Target Support Files/Pods-VideoDecibelUITests/Pods-VideoDecibelUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -216,6 +219,7 @@
 		AC04DECC293C3C100008371D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AC04DEE4293C49190008371D /* InfoPlist.strings */,
 				AC04DED3293C3CA20008371D /* Localizable.strings */,
 			);
 			path = "Supporting Files";
@@ -332,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC04DED1293C3CA20008371D /* Localizable.strings in Resources */,
+				AC04DEE2293C49190008371D /* InfoPlist.strings in Resources */,
 				AC04DE88293C2B350008371D /* HomeViewController.storyboard in Resources */,
 				39FFCC3C293447460053C113 /* LaunchScreen.storyboard in Resources */,
 				39FFCC39293447460053C113 /* Assets.xcassets in Resources */,
@@ -511,6 +516,15 @@
 				AC04DED4293C3CA60008371D /* ko */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		AC04DEE4293C49190008371D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC04DEE3293C49190008371D /* en */,
+				AC04DEE5293C491C0008371D /* ko */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

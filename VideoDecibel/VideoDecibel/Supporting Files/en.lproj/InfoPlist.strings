@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  VideoDecibel
+
+  Created by 박수성 on 2022/12/04.
+  
+*/
+
+NSMicrophoneUsageDescription = "Used for backward audio.";
+NSPhotoLibraryUsageDescription = "Used for snapshot & live record & Clip.";
+NSCameraUsageDescription = "Used for face registration.";

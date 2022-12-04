@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  VideoDecibel
+
+  Created by 박수성 on 2022/12/04.
+  
+*/
+
+NSMicrophoneUsageDescription = "카메라로 오디오 전송을 위해 사용됩니다.\n허용하지 않을 경우 해당 기능을 사용할 수 없습니다.";
+NSPhotoLibraryUsageDescription = "스냅샷 & 라이브 녹화 & 클립 저장을 위해 사용됩니다.\n허용하지 않을 경우 해당 기능을 사용할 수 없습니다.";
+NSCameraUsageDescription = "얼굴 인식 등록을 위해 사용됩니다.\n허용하지 않을 경우 해당 기능을 사용할 수 없습니다.";
